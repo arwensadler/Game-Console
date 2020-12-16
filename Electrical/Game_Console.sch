@@ -1,0 +1,446 @@
+EESchema Schematic File Version 4
+LIBS:Game_Console-cache
+EELAYER 30 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Game Console"
+Date "2020-10-13"
+Rev "Rev 1.0"
+Comp "West-Craft"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5F866F12
+P 8550 6100
+F 0 "SW2" V 8504 6248 50  0000 L CNN
+F 1 "BUTTON" V 8595 6248 50  0000 L CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 8550 6300 50  0001 C CNN
+F 3 "~" H 8550 6300 50  0001 C CNN
+F 4 "https://www.sparkfun.com/products/97" H 8550 6100 50  0001 C CNN "Link"
+F 5 "$0.35" H 8550 6100 50  0001 C CNN "Price"
+	1    8550 6100
+	0    1    1    0   
+$EndComp
+$Comp
+L Game_Console-rescue:Teensy4.0-Game_Console U1
+U 1 1 5F8B4702
+P 3050 5400
+F 0 "U1" H 3550 5350 50  0000 R CNN
+F 1 "Teensy4.0" H 3650 5500 50  0000 R CNN
+F 2 "Game_Console:Teensy" H 3050 5400 50  0001 C CNN
+F 3 "" H 3050 5400 50  0001 C CNN
+F 4 "https://www.amazon.com/gp/product/B08259KDHY/ref=ppx_yo_dt_b_asin_title_o07_s00?ie=UTF8&psc=1" H 3050 5400 50  0001 C CNN "Link"
+F 5 "$29.99" H 3050 5400 50  0001 C CNN "Price"
+	1    3050 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Game_Console-rescue:Joystick-Game_Console U4
+U 1 1 5F8B5984
+P 8800 3450
+F 0 "U4" H 8800 3400 50  0000 L CNN
+F 1 "Joystick" H 8700 3500 50  0000 L CNN
+F 2 "Game_Console:Joystick" H 8700 3400 50  0001 C CNN
+F 3 "" H 8700 3400 50  0001 C CNN
+F 4 "https://www.sparkfun.com/products/9032" H 8800 3450 50  0001 C CNN "Link"
+F 5 "$3.95" H 8800 3450 50  0001 C CNN "Price"
+	1    8800 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Game_Console-rescue:LCDScreen-Game_Console U3
+U 1 1 5F8B7BB5
+P 6300 3700
+F 0 "U3" H 6250 4100 50  0000 L CNN
+F 1 "LCDScreen" H 6100 4250 50  0000 L CNN
+F 2 "Game_Console:LCD Screen" H 6300 3700 50  0001 C CNN
+F 3 "" H 6300 3700 50  0001 C CNN
+F 4 "https://www.amazon.com/HiLetgo-240X320-Resolution-Display-ILI9341/dp/B073R7BH1B/ref=sr_1_8?dchild=1&keywords=touchscreen+lcd+arduino&qid=1601398050&sr=8-8" H 6300 3700 50  0001 C CNN "Link"
+F 5 "$13.99" H 6300 3700 50  0001 C CNN "Price"
+	1    6300 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Game_Console-rescue:PowerBoost1000-Game_Console U2
+U 1 1 5F8B8ADB
+P 3250 2900
+F 0 "U2" H 3150 2700 50  0000 L CNN
+F 1 "PowerBoost1000" H 2900 2800 50  0000 L CNN
+F 2 "Game_Console:Power_Boost" H 3250 2900 50  0001 C CNN
+F 3 "" H 3250 2900 50  0001 C CNN
+F 4 "https://www.adafruit.com/product/2465" H 3250 2900 50  0001 C CNN "Link"
+F 5 "$19.95" H 3250 2900 50  0001 C CNN "Price"
+	1    3250 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPDT SW1
+U 1 1 5F8BA632
+P 3700 2450
+F 0 "SW1" V 3654 2598 50  0000 L CNN
+F 1 "POWER" V 3745 2598 50  0000 L CNN
+F 2 "Game_Console:SPDT" H 3700 2450 50  0001 C CNN
+F 3 "~" H 3700 2450 50  0001 C CNN
+F 4 "https://www.adafruit.com/product/805" H 3700 2450 50  0001 C CNN "Link"
+F 5 "$0.95" H 3700 2450 50  0001 C CNN "Price"
+	1    3700 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 5F8BE689
+P 2400 4850
+F 0 "#PWR01" H 2400 4700 50  0001 C CNN
+F 1 "+5V" H 2415 5023 50  0000 C CNN
+F 2 "" H 2400 4850 50  0001 C CNN
+F 3 "" H 2400 4850 50  0001 C CNN
+	1    2400 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5F8BFF46
+P 2550 5900
+F 0 "#PWR03" H 2550 5650 50  0001 C CNN
+F 1 "GND" H 2555 5727 50  0000 C CNN
+F 2 "" H 2550 5900 50  0001 C CNN
+F 3 "" H 2550 5900 50  0001 C CNN
+	1    2550 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5F8C072E
+P 5700 4200
+F 0 "#PWR09" H 5700 3950 50  0001 C CNN
+F 1 "GND" H 5705 4027 50  0000 C CNN
+F 2 "" H 5700 4200 50  0001 C CNN
+F 3 "" H 5700 4200 50  0001 C CNN
+	1    5700 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR08
+U 1 1 5F8C106B
+P 5650 2500
+F 0 "#PWR08" H 5650 2350 50  0001 C CNN
+F 1 "+5V" H 5665 2673 50  0000 C CNN
+F 2 "" H 5650 2500 50  0001 C CNN
+F 3 "" H 5650 2500 50  0001 C CNN
+	1    5650 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR04
+U 1 1 5F8C1E5F
+P 2600 4050
+F 0 "#PWR04" H 2600 3900 50  0001 C CNN
+F 1 "+3.3V" H 2615 4223 50  0000 C CNN
+F 2 "" H 2600 4050 50  0001 C CNN
+F 3 "" H 2600 4050 50  0001 C CNN
+	1    2600 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR010
+U 1 1 5F8C2A89
+P 5900 2500
+F 0 "#PWR010" H 5900 2350 50  0001 C CNN
+F 1 "+3.3V" H 5915 2673 50  0000 C CNN
+F 2 "" H 5900 2500 50  0001 C CNN
+F 3 "" H 5900 2500 50  0001 C CNN
+	1    5900 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5F8C4573
+P 6350 2200
+F 0 "R1" H 6420 2246 50  0000 L CNN
+F 1 "100" H 6420 2155 50  0000 L CNN
+F 2 "Game_Console:R_Through_Hole_eighth_watt" V 6280 2200 50  0001 C CNN
+F 3 "~" H 6350 2200 50  0001 C CNN
+F 4 "https://www.digikey.com/en/products/detail/stackpole-electronics-inc/cf18jt100r/1741562" H 6350 2200 50  0001 C CNN "Link"
+F 5 "$0.10" H 6350 2200 50  0001 C CNN "Price"
+	1    6350 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 2350 6350 2500
+$Comp
+L power:GND #PWR015
+U 1 1 5F8CB79E
+P 8650 3950
+F 0 "#PWR015" H 8650 3700 50  0001 C CNN
+F 1 "GND" H 8655 3777 50  0000 C CNN
+F 2 "" H 8650 3950 50  0001 C CNN
+F 3 "" H 8650 3950 50  0001 C CNN
+	1    8650 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5F8CC044
+P 8850 3950
+F 0 "#PWR016" H 8850 3700 50  0001 C CNN
+F 1 "GND" H 8855 3777 50  0000 C CNN
+F 2 "" H 8850 3950 50  0001 C CNN
+F 3 "" H 8850 3950 50  0001 C CNN
+	1    8850 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR018
+U 1 1 5F8CC7D8
+P 9050 3950
+F 0 "#PWR018" H 9050 3700 50  0001 C CNN
+F 1 "GND" H 9055 3777 50  0000 C CNN
+F 2 "" H 9050 3950 50  0001 C CNN
+F 3 "" H 9050 3950 50  0001 C CNN
+	1    9050 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 5F8D371A
+P 8550 6300
+F 0 "#PWR013" H 8550 6050 50  0001 C CNN
+F 1 "GND" H 8555 6127 50  0000 C CNN
+F 2 "" H 8550 6300 50  0001 C CNN
+F 3 "" H 8550 6300 50  0001 C CNN
+	1    8550 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5F8D6410
+P 2400 5900
+F 0 "#PWR02" H 2400 5650 50  0001 C CNN
+F 1 "GND" H 2405 5727 50  0000 C CNN
+F 2 "" H 2400 5900 50  0001 C CNN
+F 3 "" H 2400 5900 50  0001 C CNN
+	1    2400 5900
+	1    0    0    -1  
+$EndComp
+Text GLabel 8550 5650 1    50   Input ~ 0
+BTN
+Text GLabel 3750 6050 3    50   Input ~ 0
+BTN
+Wire Wire Line
+	3750 6050 3750 5900
+Text GLabel 8250 3600 0    50   Input ~ 0
+JOY_BTN
+Wire Wire Line
+	8350 3600 8250 3600
+Text GLabel 3900 6050 3    50   Input ~ 0
+JOY_BTN
+Wire Wire Line
+	3900 5900 3900 6050
+Text GLabel 8250 3500 0    50   Input ~ 0
+JOY_HORZ
+Wire Wire Line
+	8350 3500 8250 3500
+Text GLabel 4100 4700 1    50   Input ~ 0
+JOY_HORZ
+Wire Wire Line
+	4100 4700 4100 4850
+Text GLabel 4250 4700 1    50   Input ~ 0
+JOY_VERT
+Wire Wire Line
+	4250 4850 4250 4700
+Text GLabel 8250 3400 0    50   Input ~ 0
+JOY_VERT
+Wire Wire Line
+	8250 3400 8350 3400
+Text GLabel 4400 4700 1    50   Input ~ 0
+SCK
+Wire Wire Line
+	4400 4700 4400 4850
+Text GLabel 6250 4350 3    50   Input ~ 0
+SCK
+Wire Wire Line
+	6250 4200 6250 4350
+Text GLabel 6450 4350 3    50   Input ~ 0
+SDO
+Wire Wire Line
+	6450 4200 6450 4350
+Text GLabel 4500 6050 3    50   Input ~ 0
+SDO
+Wire Wire Line
+	4500 5900 4500 6050
+Text GLabel 6150 4350 3    50   Input ~ 0
+SDI
+Wire Wire Line
+	6150 4200 6150 4350
+Text GLabel 4350 6050 3    50   Input ~ 0
+SDI
+Wire Wire Line
+	4350 5900 4350 6050
+Text GLabel 5850 4350 3    50   Input ~ 0
+CS
+Wire Wire Line
+	5850 4200 5850 4350
+Text GLabel 4200 6050 3    50   Input ~ 0
+CS
+Wire Wire Line
+	4200 5900 4200 6050
+Text GLabel 6050 4350 3    50   Input ~ 0
+DC
+Wire Wire Line
+	6050 4200 6050 4350
+Text GLabel 4050 6050 3    50   Input ~ 0
+DC
+Wire Wire Line
+	4050 5900 4050 6050
+Wire Wire Line
+	3700 2250 4200 2250
+Wire Wire Line
+	4200 2250 4200 3100
+Wire Wire Line
+	4200 3100 3800 3100
+$Comp
+L power:GND #PWR07
+U 1 1 5F901E5A
+P 3800 2650
+F 0 "#PWR07" H 3800 2400 50  0001 C CNN
+F 1 "GND" H 3805 2477 50  0000 C CNN
+F 2 "" H 3800 2650 50  0001 C CNN
+F 3 "" H 3800 2650 50  0001 C CNN
+	1    3800 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5F90248A
+P 3450 3500
+F 0 "#PWR06" H 3450 3250 50  0001 C CNN
+F 1 "GND" H 3455 3327 50  0000 C CNN
+F 2 "" H 3450 3500 50  0001 C CNN
+F 3 "" H 3450 3500 50  0001 C CNN
+	1    3450 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR020
+U 1 1 5F933A43
+P 8650 3050
+F 0 "#PWR020" H 8650 2900 50  0001 C CNN
+F 1 "+3.3V" H 8665 3223 50  0000 C CNN
+F 2 "" H 8650 3050 50  0001 C CNN
+F 3 "" H 8650 3050 50  0001 C CNN
+	1    8650 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR021
+U 1 1 5F9341DB
+P 9050 3050
+F 0 "#PWR021" H 9050 2900 50  0001 C CNN
+F 1 "+3.3V" H 9065 3223 50  0000 C CNN
+F 2 "" H 9050 3050 50  0001 C CNN
+F 3 "" H 9050 3050 50  0001 C CNN
+	1    9050 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5F9C5F75
+P 3000 2300
+F 0 "C3" H 3115 2346 50  0000 L CNN
+F 1 "0.1uF" H 3115 2255 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D6.0mm_W4.4mm_P5.00mm" H 3038 2150 50  0001 C CNN
+F 3 "~" H 3000 2300 50  0001 C CNN
+	1    3000 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C1
+U 1 1 5F9C6E18
+P 2500 2300
+F 0 "C1" H 2615 2346 50  0000 L CNN
+F 1 "10uF" H 2615 2255 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 2500 2300 50  0001 C CNN
+F 3 "~" H 2500 2300 50  0001 C CNN
+	1    2500 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 2100 3000 2100
+Wire Wire Line
+	3000 2100 3000 2150
+Wire Wire Line
+	3000 2100 2500 2100
+Wire Wire Line
+	2500 2100 2500 2150
+Connection ~ 3000 2100
+$Comp
+L power:GND #PWR019
+U 1 1 5F9C8F4E
+P 3000 2450
+F 0 "#PWR019" H 3000 2200 50  0001 C CNN
+F 1 "GND" H 3005 2277 50  0000 C CNN
+F 2 "" H 3000 2450 50  0001 C CNN
+F 3 "" H 3000 2450 50  0001 C CNN
+	1    3000 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 5F9C9BFF
+P 2500 2450
+F 0 "#PWR014" H 2500 2200 50  0001 C CNN
+F 1 "GND" H 2505 2277 50  0000 C CNN
+F 2 "" H 2500 2450 50  0001 C CNN
+F 3 "" H 2500 2450 50  0001 C CNN
+	1    2500 2450
+	1    0    0    -1  
+$EndComp
+Connection ~ 3400 2100
+Wire Wire Line
+	3400 2100 3400 2650
+$Comp
+L Device:C C2
+U 1 1 5F9CD301
+P 2900 4250
+F 0 "C2" H 3015 4296 50  0000 L CNN
+F 1 "0.1uF" H 3015 4205 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D6.0mm_W4.4mm_P5.00mm" H 2938 4100 50  0001 C CNN
+F 3 "~" H 2900 4250 50  0001 C CNN
+	1    2900 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR017
+U 1 1 5F9CDB72
+P 2900 4400
+F 0 "#PWR017" H 2900 4150 50  0001 C CNN
+F 1 "GND" H 2905 4227 50  0000 C CNN
+F 2 "" H 2900 4400 50  0001 C CNN
+F 3 "" H 2900 4400 50  0001 C CNN
+	1    2900 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 4100 2600 4100
+Wire Wire Line
+	2600 4100 2600 4050
+Wire Wire Line
+	2600 4100 2600 4850
+Connection ~ 2600 4100
+Wire Wire Line
+	3400 1900 3400 2100
+Wire Wire Line
+	6350 2000 6350 2050
+Text GLabel 6350 2000 1    50   Input ~ 0
++5V
+Text GLabel 3400 1900 1    50   Input ~ 0
++5V
+Wire Wire Line
+	8550 5650 8550 5900
+$EndSCHEMATC
