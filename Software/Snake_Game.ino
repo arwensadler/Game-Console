@@ -47,8 +47,7 @@ void setup()
   pinMode(7, INPUT_PULLUP);
   pinMode(8, INPUT_PULLUP);
 
-//  // Code for testing joystick
-  Serial.begin(9600);
+  delay(500);
 
 }
 
@@ -236,7 +235,7 @@ void loop(){
     }
     delay(200);
   } else {
-    tft.setRotation(1);
+//    tft.setRotation(1);
     tft.setTextColor(ILI9488_WHITE);
     tft.setCursor(40, 110);
     tft.setTextSize(2);
