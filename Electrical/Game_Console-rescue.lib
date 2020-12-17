@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Joystick-Game_Console
+# Joystick-Game_Console-Game_Console-rescue
 #
-DEF Joystick-Game_Console U 0 40 Y Y 1 F N
+DEF Joystick-Game_Console-Game_Console-rescue U 0 40 Y Y 1 F N
 F0 "U" 50 -50 50 H V C CNN
-F1 "Joystick-Game_Console" 50 50 50 H V C CNN
+F1 "Joystick-Game_Console-Game_Console-rescue" 50 50 50 H V C CNN
 F2 "" -100 -50 50 H I C CNN
 F3 "" -100 -50 50 H I C CNN
 DRAW
@@ -22,11 +22,11 @@ X SEL- 8 50 -500 100 U 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# LCDScreen-Game_Console
+# LCDScreen-Game_Console-Game_Console-rescue
 #
-DEF LCDScreen-Game_Console U 0 40 Y Y 1 F N
+DEF LCDScreen-Game_Console-Game_Console-rescue U 0 40 Y Y 1 F N
 F0 "U" 0 400 50 H V C CNN
-F1 "LCDScreen-Game_Console" 0 550 50 H V C CNN
+F1 "LCDScreen-Game_Console-Game_Console-rescue" 0 550 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -48,11 +48,11 @@ X SDO 9 150 -500 100 U 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# PowerBoost1000-Game_Console
+# PowerBoost1000-Game_Console-Game_Console-rescue
 #
-DEF PowerBoost1000-Game_Console U 0 40 Y Y 1 F N
+DEF PowerBoost1000-Game_Console-Game_Console-rescue U 0 40 Y Y 1 F N
 F0 "U" -100 -200 50 H V C CNN
-F1 "PowerBoost1000-Game_Console" -100 -100 50 H V C CNN
+F1 "PowerBoost1000-Game_Console-Game_Console-rescue" -100 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -68,11 +68,11 @@ X 5V 8 150 250 100 D 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# Teensy4.0-Game_Console
+# Teensy4.0-Game_Console-Game_Console-rescue
 #
-DEF Teensy4.0-Game_Console U 0 40 Y Y 1 F N
+DEF Teensy4.0-Game_Console-Game_Console-rescue U 0 40 Y Y 1 F N
 F0 "U" 350 -150 50 H V C CNN
-F1 "Teensy4.0-Game_Console" 350 0 50 H V C CNN
+F1 "Teensy4.0-Game_Console-Game_Console-rescue" 350 0 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
